@@ -39,7 +39,7 @@ public class MyProgram {
         */
 
 
-        //
+        /*
         Scanner in2 = new Scanner(System.in);
 
         do {
@@ -74,6 +74,30 @@ public class MyProgram {
         while(in2.nextInt() != -1);
 
         in2.close();
+        */
+
+        Scanner in2 = new Scanner(System.in);
+        while (true){
+            System.out.println("Enter the number > 0:");
+            String value = in2.nextLine();
+            if (value.equals("x")) {
+                break;
+            }
+            int intvalue=Integer.parseInt(value);
+
+            int flowerCount = 1;
+
+            if(intvalue <= 0){
+                System.out.println("Value is incorrect. Stop.");
+            }
+            else if(intvalue == 1){
+                System.out.println("Flower count: 1");
+            }
+            else{
+                flowerCount = intvalue + (intvalue - 1); // 0 +
+                System.out.println("Flower count: " + flowerCount);
+            }
+        }
 
     }
 }
