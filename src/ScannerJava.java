@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MyProgram {
+public class ScannerJava {
     public static void main(String[] args) throws AWTException {
         // Scanner class example
         /*
@@ -76,6 +76,7 @@ public class MyProgram {
         in2.close();
         */
 
+        /*
         Scanner in2 = new Scanner(System.in);
         while (true){
             System.out.println("Enter the number > 0:");
@@ -98,6 +99,13 @@ public class MyProgram {
                 System.out.println("Flower count: " + flowerCount);
             }
         }
+        */
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter some digit");
+        int x = s.nextInt();
+        System.out.println("You entered " + x);
+
 
     }
 }
