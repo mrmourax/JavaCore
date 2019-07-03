@@ -7,10 +7,11 @@ public class SettersAndGetters {
         System.out.println(person1.getAge());
     }
 
-    void temp() {
-        MyPerson mp = new MyPerson();
-        mp.setName("asd");
-    }
+
+        MyPerson mp = new MyPerson(){{
+            mp.setName("asd");
+        }};
+
 }
 
 
